@@ -138,9 +138,45 @@
     border-radius: 8px;
     box-shadow: 10px 10px 10px 3px rgba(255, 255, 255, 0.5);
     cursor: pointer;
-    transition: box-shadow .5s ease;
+    transition: box-shadow .3s ease;
+}
+
+.product_container {
+    display: contents;
+    text-decoration: none;
 }
 
 .product:hover {
     box-shadow: 4px 4px 4px 3px rgba(255, 255, 255, 0.5);
+}
+
+.product_container .product *, .product_container .product:hover *{
+    color: black;
+}
+
+.dataset_popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0 0 0 0;
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.dataset_container {
+    width: 40vw;
+    height: 30vh;
+    padding: 30px;
+    position: relative;
+    display: grid;
+    background: white;
+}
+
+.popup_close {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
